@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入css、js -->
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <!-- 整体布局 -->
+    <div class="container switch">
+        <!-- 注册页面 -->
+        <div class="container_form container-signup">
+            <form action="" class="form">
+                <h2 class="form-title">Register</h2>
+                <input type="text" placeholder="Username" class="input" name="user">
+                <input type="email" placeholder="Email" class="input" name="email">
+                <input type="password" placeholder="Password" class="input" name="pws">
+                <!-- <input type="password" name="pws" placeholder="Confirm password" class="input"/> -->
+                <!-- <input type="text" name="nick" placeholder="Nickname(1-20)" class="input"/> -->
+                <button class="submit">Create</button>
+            </form>
+        </div>
+
+        <!-- 登录页面 -->
+        <div class="container_form container-signin">
+            <form action="javascript:void(0);" class="form">
+                <h2 class="form-title">Log in</h2>
+                <input type="text" placeholder="User" class="input" name="user">
+                <input type="password" placeholder="Password" class="input" name="pws">
+                <a href="javascript:void(0);" class = "link">forgot your password?</a>
+                <button class="submit">Log in</button>
+                <!-- <span style="color:red;">{{ error }}</span> -->
+            </form>
+        </div>
+        <!-- 覆盖层 -->
+        <div class="container_overlay">
+            <div class="overlay">
+                <div class="overlay_panel overlay-left">
+                    <button class="submit" id="goSignIn">Log in</button>
+                </div>
+
+                <div class="overlay_panel overlay-right">
+                    <button class="submit" id="goSignUp">Create account</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
